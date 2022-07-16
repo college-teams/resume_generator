@@ -1,0 +1,31 @@
+.Navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Registerbutton
+{
+    border-radius: 25px;
+    font-size: larger;
+    font-style: normal;
+    color: grey;
+    border: none;
+    /* border-color: cyan; */
+    background-color: aqua;
+    width: 3cm;
+    height: 1cm;
+    
+}
+.Signinbutton
+{
+    border-radius: 25px;
+    font-size: larger;
+    font-style: normal;
+    color: black;
+    border: none;
+    /* border-color: whitesmoke; */
+    background-color: whitesmoke;
+    width: 3cm;
+    height: 1cm;
+}
