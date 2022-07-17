@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-green: #00c8aa;
+  --white: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+
+
+@media screen and (max-width: 1800px) {
+  .container {
+    max-width: 1400px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+::selection {
+  background: var(--primary-green);
+  color: var(--white);
+}
+
+
+
+.btn:hover {
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 172, 213,0.5);
+  border-radius: 10px;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+
+.btn:hover::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -4px;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 172, 213,0.5);
+  border-radius: 10px;
+  transition: all 0.5s;
+  z-index: -1;
 }
