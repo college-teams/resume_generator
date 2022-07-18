@@ -1,17 +1,17 @@
-import React from 'react'
-import {Navbar} from './components/navbar/Navbar'
+import React from "react";
+import { Navbar } from "./components/navbar/Navbar";
 import "./App.css";
-import VideoOverlay from './components/VideoOverlay/VideoOverlay';
-import HomePage from './pages/HomePage';
+// import VideoOverlay from './components/VideoOverlay/VideoOverlay';
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
     <>
-    <Navbar/>
-    {/* <VideoOverlay /> */}
+      <Navbar />
+      {/* <VideoOverlay /> */}
       <HomePage />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
