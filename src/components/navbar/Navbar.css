@@ -3,55 +3,118 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0px;
 }
+
 .Registerbutton
 {
     border-radius: 25px;
-    font-size: larger;
+    font-size: 16px;
     font-style: normal;
-    color: grey;
+    color: #FFFFFF;
     border: none;
-    /* border-color: cyan; */
-    background-color: aqua;
+    background-color: #00c8aa;
     width: 3cm;
     height: 1cm;
+    margin-right: -10px;
+    /* margin-bottom: 10px; */
     
 }
 .Signinbutton
 {
     border-radius: 25px;
-    font-size: larger;
+    font-size: 16px;
     font-style: normal;
     color: black;
     border: none;
-    /* border-color: whitesmoke; */
-    background-color: whitesmoke;
-    width: 3cm;
+    background-color: #e1e1e1;
+    width: 2.5cm;
     height: 1cm;
+    margin-right: 35px;
+    /* margin-bottom: 10px; */
+
 }
-.link
+.Header_Left
+{
+    margin-bottom: 10px;
+}
+.Header_Right
 {
     display: flex;
-    align-items:flex-end;
+    align-items:center;
     justify-content: space-around;
-    gap: 100px;
+    gap: 25px;
+    margin-top: 10px;
+    color: #313B47;
+    font: 12.8px;
+    margin-bottom: 10px;
 } 
+
 .Resume_Templates
 {
     text-decoration: none;
     color: black;
-    font-size: larger;
-
+    font-weight: 200;
+    font-size: medium;
 }
+
 .CV_Templates
 {
     text-decoration: none;
     color: black;
-    font-size: larger;
+    font-weight: 200;
+    font-size: medium;
 }
 .Cover_Letters
 {
     text-decoration: none;
     color: black;
-    font-size: larger;
+    font-weight: 200;
+    font-size: medium;
+}
+
+.Career_Blog
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: medium;
+}
+
+.Pricing
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: medium;
+
+}
+
+.EN_US
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: medium;
+
+}
+
+.Logo1
+{
+    position: absolute;
+    width: 39px;
+    height: 26px;
+    margin-top: -5px;
+    margin-left: 15px;
+}
+
+.Logo2
+{
+    position: absolute;
+    width: 120px;
+    height: 15px;
+    margin-top: 0px;
+    margin-left: 58px;
 }
