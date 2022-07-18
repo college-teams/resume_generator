@@ -29,3 +29,29 @@
     width: 3cm;
     height: 1cm;
 }
+.link
+{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-around;
+    gap: 100px;
+}
+.Resume_Templates
+{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+
+}
+.CV_Templates
+{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.Cover_Letters
+{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
