@@ -1,0 +1,160 @@
+.home_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title ."
+    "main aside aside";
+}
+
+.home_section_heading {
+  position: relative;
+  color: #313b47;
+  font-weight: 400;
+  font-size: 4.1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  grid-area: title;
+}
+
+.homegrid_left {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  grid-area: main;
+}
+
+.homegrid_left .homegrid_left_1 {
+  margin-bottom: 3rem;
+}
+
+.homegrid_left .homegrid_left_1 h2 {
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #313b47;
+}
+
+.homegrid_left .homegrid_left_1 h1 {
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #313b47;
+}
+
+.homegrid_left_2 {
+  position: relative;
+}
+
+.homegrid_left_2 button {
+  position: relative;
+  cursor: pointer;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 50px;
+  border: none;
+  background: #2cacd5;
+  text-transform: capitalize;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.75px;
+  transition: 0.5s;
+}
+
+.homegrid_left_2 button ion-icon {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.homegrid_left_2 p {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+
+.homegrid_right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-area: aside;
+}
+
+.homegrid_right img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.home_img_glass_container {
+  position: absolute;
+  top: 0%;
+  height: 60%;
+  width: 100%;
+  border-radius: 20px;
+  z-index: 10;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 0 10px 4px rgba(0 0 0 / 10%);
+}
+
+/* responseive */
+
+@media screen and (max-width: 1300px) {
+  .home_container {
+    grid-template-areas:
+      "title title title"
+      "main aside aside";
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home_container {
+    grid-template-areas:
+      "title title title"
+      "main main main"
+      "aside aside aside";
+  }
+  .home_section_heading {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .homegrid_left {
+    position: relative;
+    margin-bottom: 10rem;
+    margin-right: 0rem;
+    grid-area: main;
+  }
+
+  .homegrid_left .homegrid_left_1 {
+    text-align: center;
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+
+  .homegrid_left .homegrid_left_1 h2 {
+    font-size: 3.4rem;
+  }
+  .homegrid_left .homegrid_left_1 h1 {
+    font-size: 3.4rem;
+  }
+  .homegrid_left_2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homegrid_left_2 button {
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    font-size: 1.6rem;
+  }
+  .homegrid_left_2 p {
+    font-size: 1.8rem;
+  }
+  .homegrid_right {
+    margin-left: 0rem;
+  }
+}
