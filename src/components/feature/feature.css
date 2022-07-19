@@ -1,17 +1,22 @@
 /* linear-gradient(to right,#51E2C2,#4BCCEF) */
 
 .feature {
-  margin-top: -30%;
-  padding: 10% 0 5rem 0;
+  /* margin-top: -30%; */
+  padding: 0% 0 5rem 0;
   background: linear-gradient(to right, #51e2c2, #4bccef);
   z-index: -1000;
 }
+.feature_top {
+  margin-top: -35%;
+  background: linear-gradient(to right,#51E2C2,#4BCCEF);
+}
+
 
 .feature_container {
+  padding-top: 5%;
   position: relative;
   margin-top: -10px;
   width: 100%;
-  background: linear-gradient(to right, #51e2c2, #4bccef);
 }
 
 .feature_in_box {
@@ -64,9 +69,17 @@
 
 @media screen and (max-width: 1000px) {
   .feature {
-    padding-top: 60%;
-    margin-top: -55%;
     z-index: -10000;
+  }
+
+  .feature_top {
+    /* padding-top: 25%; */
+    /* margin-top: -55%; */
+    margin-top: -55%;
+  }
+
+  .feature_container {
+    padding-top: 50%;
   }
 
   .features_logos figure {

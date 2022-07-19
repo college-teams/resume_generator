@@ -10,7 +10,17 @@ import Img6 from "../../assets/img6.png";
 const Feature = () => {
   return (
     <div className="feature">
-      
+      <div className="feature_top">
+        <svg x="0px" y="0px" viewBox="0 0 1920 191" xmlSpace="preserve">
+          
+          <path
+            fill="white"
+            d="M1920 1434.908s-480-94.176-960 0-960 0-960 0v-148.144h1920z"
+            transform="translate(.5 -1286.264)"
+          ></path>
+        </svg>
+      </div>
+
       <div className="feature_container">
         <div className="container ">
           <div className="feature_in_box">
@@ -39,6 +49,7 @@ const Feature = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
