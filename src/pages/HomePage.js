@@ -1,4 +1,5 @@
 import React from "react";
+import BuilderFeatures from "../components/BuilderFeatures/BuilderFeatures";
 import Buildtemplates from "../components/Buildtemplates/Buildtemplates";
 import Discover from "../components/Discover/Discover";
 import Home from "../components/home/home";
@@ -14,6 +15,7 @@ const HomePage = () => {
       <VideoSection />
       <Discover />
       <Buildtemplates />
+      <BuilderFeatures />
     </>
   );
 };

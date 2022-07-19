@@ -1,7 +1,7 @@
 import React from "react";
 import "./discover.css";
 import Resume1 from "../../assets/resume_1.png";
-import Resume2 from "../../assets/resume_3.png";
+import Resume2 from "../../assets/resume_2.png";
 import Resume3 from "../../assets/resume_3.png";
 
 const Discover = () => {
