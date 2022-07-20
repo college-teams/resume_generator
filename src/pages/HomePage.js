@@ -3,6 +3,7 @@ import BuilderFeatures from "../components/BuilderFeatures/BuilderFeatures";
 import Buildtemplates from "../components/Buildtemplates/Buildtemplates";
 import Discover from "../components/Discover/Discover";
 import Home from "../components/home/home";
+import PremiumFeature from "../components/PremiumFeature/PremiumFeature";
 import UserSection from "../components/UserSection/UserSection";
 import VideoSection from "../components/VideoSection/VideoSection";
 
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Discover />
       <Buildtemplates />
       <BuilderFeatures />
+      <PremiumFeature />
     </>
   );
 };
