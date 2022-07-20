@@ -23,7 +23,7 @@ export const ResumeTemplates = () => {
                 <button>3</button>
             </div>
         </div>
-         <img src="https://d.novoresume.com/images/templates/group.png" className="image1"/>
+         <img src="https://d.novoresume.com/images/templates/group.png" alt="rest_template_img" className="image1"/>
         </div>
         </>
     // </div>

@@ -1,20 +1,26 @@
-import  "./Navbar.css"
+import { Link } from "react-router-dom";
+import  "./Navbar.css";
+
+
+
 export const Navbar = () => {
   return (
     <div className="Navbar">
       <div className="Header_Left">
-          <img src="https://d.novoresume.com/nvlib/images/lg.png" className="Logo1"/>
-          <img src="https://d.novoresume.com/nvlib/images/lgt.png" className="Logo2"/>
+        <Link to="/">
+          <img src="https://d.novoresume.com/nvlib/images/lg.png" alt="logo1" className="Logo1"/>
+          <img src="https://d.novoresume.com/nvlib/images/lgt.png" alt="logo2" className="Logo2"/>
+        </Link>
       </div>
-      <div class="Header_Right">
-          <a href="/#" class="Resume_Templates">Resume Templates </a>
-          <a href="/#" class="CV_Templates">CV Templates </a>
-          <a href="/#" class="Cover_Letters">Cover Letters </a>
-          <a href='/#' class="Career_Blog">Career Blog</a>
-          <a href='/#' class="Pricing">Pricing</a>
-          <a href='/#' class="EN_US">EN US</a>
-          <button class="Registerbutton">Register</button>
-          <button class="Signinbutton">Sign In</button>
+      <div className="Header_Right">
+          <Link to="/resumeTemplate" className="Resume_Templates">Resume Templates </Link>
+          <a href="/#" className="CV_Templates">CV Templates </a>
+          <a href="/#" className="Cover_Letters">Cover Letters </a>
+          <a href='/#' className="Career_Blog">Career Blog</a>
+          <a href='/#' className="Pricing">Pricing</a>
+          <a href='/#' className="EN_US">EN US</a>
+          <button className="Registerbutton">Register</button>
+          <button className="Signinbutton">Sign In</button>
       </div>
     </div>
   )

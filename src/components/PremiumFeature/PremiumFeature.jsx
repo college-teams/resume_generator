@@ -1,12 +1,12 @@
 import React from "react";
 import "./premiumFeature.css";
-// import PremiumImg1 from "../../assets/premiumImg1.webp";
-// import PremiumImg2 from "../../assets/premiumImg2.webp";
-// import PremiumImg3 from "../../assets/premiumImg3.webp";
+import PremiumImg1 from "../../assets/premiumImg1.webp";
+import PremiumImg2 from "../../assets/premiumImg2.webp";
+import PremiumImg3 from "../../assets/premiumImg3.webp";
 
-import PremiumImg1 from "../../assets/resume_1.png";
-import PremiumImg2 from "../../assets/resume_2.png";
-import PremiumImg3 from "../../assets/resume_3.png";
+// import PremiumImg1 from "../../assets/resume_1.png";
+// import PremiumImg2 from "../../assets/resume_2.png";
+// import PremiumImg3 from "../../assets/resume_3.png";
 
 import { AiFillStar } from "react-icons/ai";
 
@@ -57,7 +57,7 @@ const PremiumFeature = () => {
           <span className="premium_feature_icon">
             <AiFillStar />
           </span>
-          <div className="premium_template_img">
+          <div className="premium_template_img box_shadow_img">
             <img src={PremiumImg3} alt="PremiumImg1" />
           </div>
           <div className="premium_featute_text">
