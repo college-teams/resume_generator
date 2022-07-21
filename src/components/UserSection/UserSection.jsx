@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./UserSection.css";
 import { data } from "../../utils/UserCardDetails";
 import UserCard from "./UserCard";
-import useWindowDimensions from "../hooks/UseDimensions";
+import useWindowDimensions from "../../hooks/UseDimensions";
 
 const UserSection = () => {
   const [userdata, setUserData] = useState(data);
