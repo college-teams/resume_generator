@@ -1,4 +1,5 @@
 import React from "react";
+import BottomFooter from "../components/BottomFooter/BottomFooter";
 import BuilderFeatures from "../components/BuilderFeatures/BuilderFeatures";
 import Buildtemplates from "../components/Buildtemplates/Buildtemplates";
 import Discover from "../components/Discover/Discover";
@@ -22,6 +23,7 @@ const HomePage = () => {
       <PremiumFeature />
       <UserReview />
       <JobSeekers />
+      <BottomFooter />
     </>
   );
 };

@@ -1,0 +1,102 @@
+.bottomFooter {
+  position: relative;
+  background: #f5f5f5;
+}
+.bottomFooter_shapes {
+  transform: scaleX(-1);
+}
+
+.bottom_footer_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom_footer_img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bottomFooter_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  color: var(--light-black);
+}
+
+.bottomFooter_container h1 {
+  position: relative;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+}
+
+.bottomFooter_container h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  transform: translateX(-50%);
+  background: var(--secondary-green);
+  width: 75px;
+  border-radius: 10px;
+  height: 7px;
+}
+
+.bottomFooter_container button {
+  position: relative;
+  cursor: pointer;
+  padding: 1.5rem 4rem;
+  border-radius: 50px;
+  border: none;
+  background: #2cacd5;
+  text-transform: capitalize;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.75px;
+  transition: 0.5s;
+}
+
+.bottomFooter_container button ion-icon {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.bottomFooter_container p {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .bottomFooter_container h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bottomFooter_container h1 {
+    font-size: 2.3rem;
+  }
+  .bottomFooter_container button {
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  .bottomFooter_container button ion-icon {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .bottomFooter_container p {
+    font-size: 1.1rem;
+    padding-left: 0rem;
+  }
+}
