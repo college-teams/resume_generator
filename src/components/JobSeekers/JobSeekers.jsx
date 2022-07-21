@@ -20,7 +20,7 @@ const JobSeekers = () => {
             <path
               id="myClip"
               fill="#4bccef"
-              class="st0"
+              className="st0"
               d="M0,100c0,0,250,150,500,0s500,0,500,0v100H0V100z"
             ></path>
           </svg>
@@ -30,7 +30,7 @@ const JobSeekers = () => {
         </div>
         <div className="seekers_bottom_shape">
           <svg
-            class="shape-svg-mid"
+            className="shape-svg-mid"
             viewBox="0 0 1920 140.049"
             x="0px"
             y="0px"
