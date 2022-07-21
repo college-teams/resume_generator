@@ -9,7 +9,7 @@ import PremiumFeature from "../components/PremiumFeature/PremiumFeature";
 import UserSection from "../components/UserSection/UserSection";
 import UserReview from "../components/UsersReview/UserReview";
 import VideoSection from "../components/VideoSection/VideoSection";
-
+import BuilderFAQ from "../components/BuilderFAQ/BuilderFAQ"
 
 const HomePage = () => {
   return (
@@ -23,6 +23,7 @@ const HomePage = () => {
       <PremiumFeature />
       <UserReview />
       <JobSeekers />
+      <BuilderFAQ />
       <BottomFooter />
     </>
   );

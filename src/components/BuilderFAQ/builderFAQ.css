@@ -1,0 +1,148 @@
+.BuilderFAQ_container {
+  position: relative;
+  padding: 5rem 0;
+}
+
+.BuilderFAQ_container h1 {
+  color: var(--light-black);
+  text-align: center;
+  position: relative;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+}
+
+.BuilderFAQ_container h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  transform: translateX(-50%);
+  background: var(--secondary-green);
+  width: 75px;
+  border-radius: 10px;
+  height: 7px;
+}
+
+.builder_faqs_contents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.builder_faqs {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "img_area faq_content_area faq_empty_area";
+  column-gap: 2rem;
+}
+
+.builder_faqs:nth-child(even) {
+  grid-template-areas: "faq_empty_area faq_content_area img_area";
+}
+.faqs_img {
+  grid-area: img_area;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.faqs_img img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.faq_text_content {
+  grid-area: faq_content_area;
+  color: var(--light-black);
+}
+.faq_text_content > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.faq_text_content h2 {
+  position: relative;
+  font-size: 3.56rem;
+}
+
+.faq_text_content p {
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.faq_text_content ul {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.faq_text_content ul li {
+  font-size: 1.3rem;
+}
+
+.faq_text_content ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.faq_empty_content {
+  grid-area: faq_empty_area;
+}
+
+@media screen and (max-width: 1600px) {
+  .faq_text_content h2 {
+    font-size: 3rem;
+  }
+
+  .faq_text_content p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .builder_faqs {
+    width: 90%;
+    grid-template-columns: 1fr 2fr 0fr;
+    grid-template-areas: "img_area faq_content_area";
+  }
+
+  .builder_faqs:nth-child(even) {
+    grid-template-columns: 2fr 1fr 0fr;
+    grid-template-areas: "faq_content_area img_area";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .BuilderFAQ_container h1 {
+    font-size: 2.4rem;
+  }
+
+  .faq_text_content h2 {
+    font-size: 2rem;
+  }
+
+  .faq_text_content p {
+    font-size: 1.3rem;
+  }
+
+  .builder_faqs {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img_area"
+      "faq_content_area";
+  }
+
+  .builder_faqs:nth-child(even) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img_area"
+      "faq_content_area";
+  }
+
+  .faqs_img {
+    margin: 0 auto;
+    width: 50%;
+  }
+}

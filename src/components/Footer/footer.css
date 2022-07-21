@@ -90,7 +90,15 @@
   .copyright p {
     font-size: 1.3rem;
   }
+
+  .footer_links {
+    gap: 5rem;
+  }
+  .footer_items li {
+    text-align: center;
+  }
 }
+
 
 @media screen and (max-width: 400px) {
   .copyright h1 {
