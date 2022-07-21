@@ -1,15 +1,16 @@
 import React from "react";
-import BottomFooter from "../components/BottomFooter/BottomFooter";
-import BuilderFeatures from "../components/BuilderFeatures/BuilderFeatures";
-import Buildtemplates from "../components/Buildtemplates/Buildtemplates";
-import Discover from "../components/Discover/Discover";
-import Home from "../components/home/home";
-import JobSeekers from "../components/JobSeekers/JobSeekers";
-import PremiumFeature from "../components/PremiumFeature/PremiumFeature";
-import UserSection from "../components/UserSection/UserSection";
-import UserReview from "../components/UsersReview/UserReview";
-import VideoSection from "../components/VideoSection/VideoSection";
-import BuilderFAQ from "../components/BuilderFAQ/BuilderFAQ"
+
+const BottomFooter = React.lazy(()=>import("../components/BottomFooter/BottomFooter"));
+const BuilderFeatures = React.lazy(()=>import("../components/BuilderFeatures/BuilderFeatures"));
+const Buildtemplates = React.lazy(()=>import("../components/Buildtemplates/Buildtemplates"));
+const Discover = React.lazy(()=>import("../components/Discover/Discover"));
+const Home = React.lazy(()=>import("../components/home/home"));
+const JobSeekers = React.lazy(()=>import("../components/JobSeekers/JobSeekers"));
+const PremiumFeature = React.lazy(()=>import("../components/PremiumFeature/PremiumFeature"));
+const UserSection = React.lazy(()=>import("../components/UserSection/UserSection"));
+const UserReview = React.lazy(()=>import("../components/UsersReview/UserReview"));
+const VideoSection = React.lazy(()=>import("../components/VideoSection/VideoSection"));
+const BuilderFAQ = React.lazy(()=>import("../components/BuilderFAQ/BuilderFAQ"))
 
 const HomePage = () => {
   return (
