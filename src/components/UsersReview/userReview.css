@@ -1,0 +1,25 @@
+.user_review {
+    position: relative;
+    padding: 10rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_review_heading {
+    position: relative;
+    font-size: 4rem;
+    color: var(--light-black);
+}
+
+.user_review_heading::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    background: var(--secondary-green);
+    width: 75px;
+    border-radius: 10px;
+    height: 7px;
+}

@@ -1,0 +1,175 @@
+.seekers {
+  position: relative;
+  /* background: #f5f5f5; */
+}
+
+.seekers_shapes {
+  position: relative;
+  z-index: -100;
+}
+
+.seekers_top_shape {
+  margin-bottom: -1rem;
+}
+.seekers_mid_shape .seekers_mid_shape img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.seekers_mid_shape img {
+  height: auto;
+  width: 100%;
+}
+
+.seekers_bottom_shape {
+  margin-top: -1rem;
+}
+.seekers_text_container {
+    /* border-top: 1px solid var(--primary-green); */
+    /* background: rgba(255, 255, 255, 0.1); */
+}
+.seekers_container {
+  position: relative;
+  width: 65%;
+  margin: -10rem auto 0 auto;
+}
+
+.seekers_text_box {
+  display: flex;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  padding: 1rem 5rem;
+  backdrop-filter: blur(25px);
+  background: rgba(244, 244, 244, 0, 5);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.seekers_text_img {
+  position: absolute;
+  /* height: 100%; */
+  top: -40rem;
+  right: -10rem;
+  width: 55%;
+}
+
+.seekers_text_img img {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.seekers_text_headings {
+  position: relative;
+  color: var(--light-black);
+}
+
+.seekers_text_headings h2 {
+  position: relative;
+  font-size: 2.8rem;
+}
+
+.seekers_text_headings h1 {
+  font-size: 6.5rem;
+}
+.seekers_text_headings p {
+  font-size: 1.8rem;
+}
+
+
+.seekers_text_content {
+    margin-top: 3rem;
+    position: relative;
+    padding: 2rem 4rem;
+    color: var(--light-black);
+    font-size: 1.6rem;
+}
+
+.seekers_text_content h1 {
+    position: relative;
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+.seekers_text_content p {
+    margin-bottom: 3rem;
+}
+
+.seekers_text_content ul p {
+    margin-bottom: 0.5rem;
+}
+
+.seekers_text_content ul li {
+    margin-left: 3rem;
+    margin-top: .5rem;
+}
+
+.seekers_text_content h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 6px;
+    width: 75px;
+    background: var(--dark-yellow);
+}
+
+.seekers_button {
+    position: relative;
+    padding: 1.25rem 3rem ;
+    font-size: 1.8rem;
+    background: var(--dark-yellow);
+    color: var(--light-black);
+    border-radius: 50px;
+    border:none;
+    outline: none;
+    margin-top: 5rem;
+}
+
+
+@media  (max-width:1600px) {
+    .seekers_text_content h1 {
+        font-size: 3.4rem;
+    }
+    .seekers_text_content {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .seekers_container {
+        width: 100%;
+    }
+    .seekers_text_img {
+      display: none;
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+    .seekers_container {
+        width: 100%;
+    }
+    .seekers_text_content h1 {
+        font-size: 2.2rem;
+    }
+    .seekers_text_content {
+        font-size: 1.4rem;
+    }
+
+    .seekers_text_headings h2 {
+        font-size: 1.8rem;
+    }
+    .seekers_text_headings h1 {
+        font-size: 3.8rem;
+    }
+    .seekers_text_headings p{
+        font-size: 1.4rem;
+    }
+    .seekers_button {
+      padding: 1.25rem 3rem ;
+      font-size: 1.6rem;
+  }
+}
