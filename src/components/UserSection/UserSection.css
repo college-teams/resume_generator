@@ -28,6 +28,7 @@
 }
 
 .user_main {
+  position: relative;
   margin-top: 5rem;
   display: flex;
   gap: 1rem;
@@ -90,6 +91,7 @@
 /* cards */
 
 .card {
+  position: relative;
   width: 50%;
   max-height: 57rem;
   background: #f5f5f5;
@@ -97,6 +99,7 @@
   padding: 4rem 4rem 4rem 4rem;
   color: #313b47;
   transition: 0.5s;
+
 }
 
 .card-header {
@@ -187,6 +190,20 @@
   cursor: pointer;
   position: absolute;
   bottom: 2rem;
+  text-decoration: underline;
+}
+
+.btn_disable {
+  position: relative;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width:1300px) {
+  .card {
+    height: max-content;
+  }
+  
 }
 
 @media screen and (max-width: 1000px) {
@@ -217,5 +234,59 @@
   .slider_container {
     width: 68rem;
     margin: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .slider_container {
+    margin: 0;
+  }
+
+  .user_header h1 {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left_arrow,
+  .right_arrow {
+    display: none;
+  }
+  .user_header h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .slider_container {
+    overflow-x: scroll;
+  }
+
+  .card-header {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .card-header figure {
+    display: none;
+  }
+
+  .header_name_descrip {
+    width: 100%;
+  }
+
+  .header_name_descrip .user-name {
+    font-size: 2rem;
+  }
+  
+  .header_name_descrip .title {
+    position: relative;
+    font-size: 1.5rem;
+  }
+
+  .show-active {
+    font-size: 1.4rem;
+
   }
 }
