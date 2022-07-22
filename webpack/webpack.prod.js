@@ -56,6 +56,9 @@ module.exports = {
       filename: `${commonPaths.cssFolder}/[name].css`,
       chunkFilename: `${commonPaths.cssFolder}/chunk.[name].css`,
     }),
+     new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
   ],
   devtool: "source-map",
 };
