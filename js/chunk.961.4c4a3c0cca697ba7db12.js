@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunknova_resume_clone=self.webpackChunknova_resume_clone||[]).push([[961],{5961:function(e,r,s){s.r(r);var n=s(7294);r.default=function(){return n.createElement("div",{className:"container user_review"},n.createElement("h1",{className:"user_review_heading"},"Novorésumé Users Love Our Resume Builder."))}}}]);
+//# sourceMappingURL=chunk.961.4c4a3c0cca697ba7db12.js.map
