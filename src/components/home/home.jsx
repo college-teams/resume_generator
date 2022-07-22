@@ -1,7 +1,9 @@
-import React from "react";
 import homeStyle from "./home.module.css";
 import Homeimg from "../../assets/home.webp";
+import HomeCMPimg from "../../assets/home.webp";
+
 import Feature from "../feature/Feature";
+import UseLazyLoad from "../../hooks/UseLazyLoad";
 
 const home = () => {
   return (
@@ -26,7 +28,7 @@ const home = () => {
         </div>
         <div className={homeStyle.homegrid_right}>
           <div className={homeStyle.home_img_glass_container}></div>
-          <img src={Homeimg} alt="Home_img" />
+          <UseLazyLoad src={Homeimg} alt="Home_img" data_src={HomeCMPimg} />
         </div>
       </div>
       <Feature />

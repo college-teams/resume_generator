@@ -1,4 +1,3 @@
-import React from "react";
 import "./builderFeatures.css";
 import Builder1 from "../../assets/builder1.png";
 import Builder2 from "../../assets/builder2.png";
@@ -6,6 +5,7 @@ import Builder3 from "../../assets/builder3.png";
 import Builder4 from "../../assets/builder4.png";
 import Builder5 from "../../assets/builder5.png";
 import Builder6 from "../../assets/builder6.png";
+import RevealComponent from "../RevealComponent/RevealComponent";
 
 const BuilderFeatures = () => {
   return (
@@ -16,7 +16,9 @@ const BuilderFeatures = () => {
       <div className="builder_features">
         <div className="builder_feature">
           <div className="builder_feature_img">
-            <img src={Builder1} alt="builder1" />
+            <RevealComponent>
+              <img src={Builder1} alt="builder1" />
+            </RevealComponent>
           </div>
           <div className="builder_feature_text">
             <h1>Free AND Premium</h1>
@@ -29,7 +31,9 @@ const BuilderFeatures = () => {
         </div>
         <div className="builder_feature">
           <div className="builder_feature_img">
-            <img src={Builder2} alt="builder2" />
+            <RevealComponent>
+              <img src={Builder2} alt="builder2" />
+            </RevealComponent>
           </div>
           <div className="builder_feature_text">
             <h1>Creative and Professional Resume Templates</h1>
@@ -42,7 +46,9 @@ const BuilderFeatures = () => {
         </div>
         <div className="builder_feature">
           <div className="builder_feature_img">
-            <img src={Builder3} alt="builder3" />
+            <RevealComponent>
+              <img src={Builder3} alt="builder3" />
+            </RevealComponent>
           </div>
           <div className="builder_feature_text">
             <h1>NO Hidden Fees</h1>
@@ -55,7 +61,9 @@ const BuilderFeatures = () => {
         </div>
         <div className="builder_feature">
           <div className="builder_feature_img">
-            <img src={Builder4} alt="builder4" />
+            <RevealComponent>
+              <img src={Builder4} alt="builder4" />
+            </RevealComponent>
           </div>
           <div className="builder_feature_text">
             <h1>ATS-Friendly</h1>
@@ -68,7 +76,9 @@ const BuilderFeatures = () => {
         </div>
         <div className="builder_feature">
           <div className="builder_feature_img">
-            <img src={Builder5} alt="builder5" />
+            <RevealComponent>
+              <img src={Builder5} alt="builder5" />
+            </RevealComponent>
           </div>
           <div className="builder_feature_text">
             <h1>Live Content Feedback</h1>
@@ -81,7 +91,9 @@ const BuilderFeatures = () => {
         </div>
         <div className="builder_feature">
           <div className="builder_feature_img">
-            <img src={Builder6} alt="builder6" />
+            <RevealComponent>
+              <img src={Builder6} alt="builder6" />
+            </RevealComponent>
           </div>
           <div className="builder_feature_text">
             <h1>Edit Your Resume in Real Time</h1>

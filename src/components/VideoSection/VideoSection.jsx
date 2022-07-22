@@ -1,9 +1,11 @@
 import React from "react";
 import "./videoSection.css";
 import VideoImg from "../../assets/video_img.webp";
+import VideoCMPImg from "../../assets/video_img.webp";
 import { BsPlayFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { showVideo } from "../../app/VideoSlice";
+import UseLazyLoad from "../../hooks/UseLazyLoad";
 
 const VideoSection = () => {
   const dispatch = useDispatch();
@@ -16,7 +18,7 @@ const VideoSection = () => {
         <button  onClick={() => dispatch(showVideo({}))}>Play video</button>
       </div>
       <div className="videoWrapper" onClick={() => dispatch(showVideo({}))}>
-        <img src={VideoImg} alt="video_img" />
+        <UseLazyLoad src={VideoImg} alt="video_img" data_src={VideoCMPImg} />
         <span className="play_buttton_icon">
           <BsPlayFill />
         </span>

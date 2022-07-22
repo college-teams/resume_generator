@@ -3,7 +3,11 @@ import "./premiumFeature.css";
 import PremiumImg1 from "../../assets/premiumImg1.webp";
 import PremiumImg2 from "../../assets/premiumImg2.webp";
 import PremiumImg3 from "../../assets/premiumImg3.webp";
+import PremiumImgCMP1 from "../../assets/premiumImg1.webp";
+import PremiumImgCMP2 from "../../assets/compression/premiumImg2_3_11zon_3_11zon_3_11zon.jpg";
+import PremiumImgCMP3 from "../../assets/compression/premiumImg3_4_11zon_4_11zon_4_11zon.jpg";
 import { AiFillStar } from "react-icons/ai";
+import UseLazyLoad from "../../hooks/UseLazyLoad";
 
 const PremiumFeature = () => {
   return (
@@ -58,7 +62,7 @@ const PremiumFeature = () => {
               <AiFillStar />
             </span>
             <div className="premium_template_img premier0">
-              <img src={PremiumImg1} alt="PremiumImg1" />
+              <UseLazyLoad src={PremiumImg1} alt="PremiumImg1" data_src={PremiumImgCMP1} />
             </div>
             <div className="premium_featute_text">
               <h4>Unlimited Design Options</h4>
@@ -73,7 +77,7 @@ const PremiumFeature = () => {
               <AiFillStar />
             </span>
             <div className="premium_template_img premier1">
-              <img src={PremiumImg2} alt="PremiumImg1" />
+              <UseLazyLoad src={PremiumImg2} alt="PremiumImg1" data_src={PremiumImgCMP2} />
             </div>
             <div className="premium_featute_text">
               <h4>Unlimited Design Options</h4>
@@ -88,7 +92,7 @@ const PremiumFeature = () => {
               <AiFillStar />
             </span>
             <div className="premium_template_img box_shadow_img premier2">
-              <img src={PremiumImg3} alt="PremiumImg1" />
+              <UseLazyLoad src={PremiumImg3} alt="PremiumImg1" data_src={PremiumImgCMP3} />
             </div>
             <div className="premium_featute_text">
               <h4>Unlimited Design Options</h4>

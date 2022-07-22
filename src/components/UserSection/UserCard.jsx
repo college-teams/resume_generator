@@ -1,4 +1,5 @@
 import React from "react";
+import UseLazyLoad from "../../hooks/UseLazyLoad";
 
 const UserCard = ({ user, handleShowMore }) => {
   return (
@@ -7,7 +8,7 @@ const UserCard = ({ user, handleShowMore }) => {
       style={{ maxHeight: `${user.showMore ? "fit-content" : "57rem"}` }}
     >
       <header className="card-header">
-        <figure>{<img src={user.image} alt={`usr_image${user.id}`} />}</figure>
+        <figure>{<UseLazyLoad src={user.image} data_src={user.dataSrc} alt={`usr_image${user.id}`} />}</figure>
 
         <div className="header_name_descrip">
           <h2 className="user-name">{user.name}</h2>

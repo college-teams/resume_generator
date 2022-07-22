@@ -1,11 +1,16 @@
-import React from "react";
 import "./discover.css";
 import Resume1 from "../../assets/resume_1.png";
 import Resume2 from "../../assets/resume_2.png";
 import Resume3 from "../../assets/resume_3.png";
 
+import ResumeCMP1 from "../../assets/compression/resume_1_5_11zon_5_11zon_5_11zon.jpg";
+import ResumeCMP2 from "../../assets/compression/resume_2_6_11zon_6_11zon_6_11zon.jpg";
+import ResumeCMP3 from "../../assets/compression/resume_3_7_11zon_7_11zon_7_11zon.jpg";
+import UseLazyLoad from "../../hooks/UseLazyLoad";
+
 const Discover = () => {
   return (
+
     <div className="container discover_container">
       <h1 className="discover_heading">
         Resume Templates for Every Career Path.
@@ -19,7 +24,7 @@ const Discover = () => {
       </p>
       <div className="discover_resumes">
         <div className="resumes">
-          <img src={Resume1} alt="resume1" />
+          <UseLazyLoad src={Resume1} alt="resume1"  data_src={ResumeCMP1}/>
           <div className="resume_content">
             <h2 className="template_header">Creative Resume Template</h2>
             <p className="template_para">
@@ -28,7 +33,7 @@ const Discover = () => {
           </div>
         </div>
         <div className="resumes">
-          <img src={Resume2} alt="resume2" />
+          <UseLazyLoad src={Resume2} alt="resume2"  data_src={ResumeCMP2}/>
           <div className="resume_content">
             <h2 className="template_header">Creative Resume Template</h2>
             <p className="template_para">
@@ -37,7 +42,7 @@ const Discover = () => {
           </div>
         </div>
         <div className="resumes">
-          <img src={Resume3} alt="resume3" />
+          <UseLazyLoad src={Resume3} alt="resume3" data_src={ResumeCMP3} />
           <div className="resume_content">
             <h2 className="template_header">Creative Resume Template</h2>
             <p className="template_para">

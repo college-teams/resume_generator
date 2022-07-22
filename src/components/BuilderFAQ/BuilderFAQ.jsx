@@ -1,4 +1,3 @@
-import React from "react";
 import "./builderFAQ.css";
 import Faq1 from "../../assets/faq1.png";
 import Faq2 from "../../assets/faqs2.png";
@@ -6,6 +5,8 @@ import Faq3 from "../../assets/faqs4.png";
 import Faq4 from "../../assets/faqs5.png";
 import Faq5 from "../../assets/faqs6.png";
 import Faq6 from "../../assets/faqs7.png";
+import RevealComponent from "../RevealComponent/RevealComponent";
+
 
 const BuilderFAQ = () => {
   return (
@@ -44,7 +45,9 @@ const BuilderFAQ = () => {
         {/* todo  have to replace content */}
         <div className="builder_faqs">
           <div className="faqs_img">
+            <RevealComponent>
             <img src={Faq2} alt="Faq2" />
+            </RevealComponent>
           </div>
           <div className="faq_text_content">
             <h2>What is the best resume builder?</h2>
@@ -69,7 +72,9 @@ const BuilderFAQ = () => {
 
         <div className="builder_faqs">
           <div className="faqs_img">
+          <RevealComponent>
             <img src={Faq3} alt="Faq3" />
+            </RevealComponent>
           </div>
           <div className="faq_text_content">
             <h2>Is this a completely free resume builder?</h2>
@@ -92,7 +97,9 @@ const BuilderFAQ = () => {
 
         <div className="builder_faqs">
           <div className="faqs_img">
+          <RevealComponent>
             <img src={Faq4} alt="Faq4" />
+            </RevealComponent>
           </div>
           <div className="faq_text_content">
             <h2>What is a resume?</h2>
@@ -115,7 +122,9 @@ const BuilderFAQ = () => {
 
         <div className="builder_faqs">
           <div className="faqs_img">
+          <RevealComponent>
             <img src={Faq5} alt="Faq5" />
+            </RevealComponent>
           </div>
           <div className="faq_text_content">
             <h2>What's the difference between a CV and a resume?</h2>
@@ -136,7 +145,9 @@ const BuilderFAQ = () => {
 
         <div className="builder_faqs">
           <div className="faqs_img">
+          <RevealComponent>
             <img src={Faq6} alt="Faq6" />
+            </RevealComponent>
           </div>
           <div className="faq_text_content">
             <h2>How can I create my resume?</h2>
