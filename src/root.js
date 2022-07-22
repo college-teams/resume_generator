@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter,HashRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import VideoOverlay from "./components/VideoOverlay/VideoOverlay";
 import ErrorBoundary from "./utils/ErrorBoundary"
@@ -8,10 +8,10 @@ const Root = ({ children, showVideoAd }) => {
   return (
     <ErrorBoundary>
       <React.Suspense fallback={"Loading"}>
-        <BrowserRouter>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <Navbar />
           {showVideoAd ? <VideoOverlay /> : children}
-        </BrowserRouter>
+        </HashRouter>
       </React.Suspense>
     </ErrorBoundary>
   );
