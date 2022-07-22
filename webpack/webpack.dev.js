@@ -1,6 +1,6 @@
 const commonPaths = require("./path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+const webpack = require("webpack")
 module.exports = {
   mode: "development",
   output: {
@@ -22,6 +22,11 @@ module.exports = {
       template: "./src/template/index.html",
       // favicon: commonPaths.faviconPath,
     }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'process.env.MY_ENV': JSON.stringify(process.env.MY_ENV),
+      'process.env.PUBLIC_URL': JSON.stringify(process.env.PUBLIC_URL),
+    })
   ],
   devServer: {
     historyApiFallback: true,
