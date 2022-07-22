@@ -1,3 +1,4 @@
+import React from "react"
 import "./ResumeTemplates.css"
 export const ResumeTemplates = () => {
     return (
