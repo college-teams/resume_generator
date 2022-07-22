@@ -1,3 +1,4 @@
+import React from "react";
 import "./builderFAQ.css";
 import Faq1 from "../../assets/faq1.png";
 import Faq2 from "../../assets/faqs2.png";

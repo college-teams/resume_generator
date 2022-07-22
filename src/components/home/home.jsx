@@ -1,3 +1,4 @@
+import React from "react";
 import homeStyle from "./home.module.css";
 import Homeimg from "../../assets/home.webp";
 import HomeCMPimg from "../../assets/home.webp";

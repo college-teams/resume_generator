@@ -1,3 +1,4 @@
+import React from "react";
 import "./builderFeatures.css";
 import Builder1 from "../../assets/builder1.png";
 import Builder2 from "../../assets/builder2.png";
