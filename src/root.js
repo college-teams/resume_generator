@@ -5,6 +5,7 @@ import VideoOverlay from "./components/VideoOverlay/VideoOverlay";
 import ErrorBoundary from "./utils/ErrorBoundary"
 
 const Root = ({ children, showVideoAd }) => {
+  console.log(process.env.PUBLIC_URL);
   return (
     <ErrorBoundary>
       <React.Suspense fallback={"Loading"}>
