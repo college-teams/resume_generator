@@ -33,7 +33,7 @@ const UseLazyLoad = ({
     observer.observe(ref?.current);
     return () => {
       // eslint-disable-next-line
-      observer?.unobserve(ref?.current);
+      // observer?.unobserve(ref?.current);
       observer.disconnect();
     };
   }, []);
