@@ -1,5 +1,6 @@
-FROM node:alpine
-WORKDIR /app
-COPY ./ ./
-RUN npm i
-CMD ["npm", "run", "dev"]
+FROM node:alpine as builder
+WORKDIR /frontend
+COPY ./package.json /frontend
+RUN npm install
+COPY . .
+CMD [ "npm", "run", "dev" ]
