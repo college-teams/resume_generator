@@ -1,6 +1,9 @@
 node_modules
 build
 .dockerignore
-Dockerfile
+Dockerfile.dev
+Dockerfile.prod
+docker-compose.dev.yml
+docker-compose.prod.yml
 yarn-error.log
 yarn.lock
