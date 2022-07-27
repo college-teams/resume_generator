@@ -1,8 +1,7 @@
 # module install
 FROM node:14-alpine as module-install-stage
-# set working directory
 WORKDIR /app
-# add `/app/node_modules/.bin` to $PATH
+# add `/app/node_modules/.bin` to $PATH  to avoid override
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
 RUN npm install
@@ -18,5 +17,4 @@ RUN npm run build
 FROM node:14-alpine
 COPY --from=build-stage /app/build/ /app/build
 RUN npm install -g serve
-# start app
-CMD serve -s /app/build -l 3000
+CMD serve -s /app/build -l 3000  
