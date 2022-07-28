@@ -3,7 +3,6 @@ job('Resume_generator_jobdsl_executing_jobs) {
         git('https://github.com/college-teams/resume_generator.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('rahulkrishnanr016@gmail.com')
-            node / branch("jenkins_scripts")
         }
     }
     triggers {
