@@ -10,7 +10,7 @@ job('Resume_generator_jobdsl_executing_jobs') {
         scm('H/5 * * * *')
     }
     wrappers {
-        nodejs('Node_js') // this is the name of the NodeJS installation in 
+        nodejs('nodejs') // this is the name of the NodeJS installation in 
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
