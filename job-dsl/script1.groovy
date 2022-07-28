@@ -1,4 +1,4 @@
-job('Resume_generator_job_dsl_example') {
+job('Resume_generator_jobdsl_executing_jobs) {
     scm {
         git('https://github.com/college-teams/resume_generator.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
