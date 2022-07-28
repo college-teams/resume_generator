@@ -1,4 +1,4 @@
-job('NodeJS example') {
+job('Resume_generator_job_dsl_example') {
     scm {
         git('https://github.com/college-teams/resume_generator.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
@@ -10,7 +10,7 @@ job('NodeJS example') {
         scm('H/5 * * * *')
     }
     wrappers {
-        nodejs('nodejs') // this is the name of the NodeJS installation in 
+        nodejs('Node_js') // this is the name of the NodeJS installation in 
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
