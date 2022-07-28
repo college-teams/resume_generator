@@ -3,6 +3,7 @@ job('NodeJS example') {
         git('https://github.com/college-teams/resume_generator.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('rahulkrishnanr016@gmail.com')
+            node / gitBranch("jenkins_scripts")
         }
     }
     triggers {
